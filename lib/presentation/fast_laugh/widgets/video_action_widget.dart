@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../core/colors.dart';
@@ -7,11 +6,11 @@ class VideoActionsWidget extends StatefulWidget {
   final Widget icondata;
   final String icontext;
 
-  const VideoActionsWidget(
-      {Key? key,
-      required this.icondata,
-      required this.icontext,})
-      : super(key: key);
+  const VideoActionsWidget({
+    Key? key,
+    required this.icondata,
+    required this.icontext,
+  }) : super(key: key);
 
   @override
   State<VideoActionsWidget> createState() => _VideoActionsWidgetState();
@@ -25,11 +24,9 @@ class _VideoActionsWidgetState extends State<VideoActionsWidget> {
       child: Column(
         children: [
           IconButton(
-            onPressed: (){},
-            icon: 
-              widget.icondata,
-              color: kwhiteColor,
-              
+            onPressed: () {},
+            icon: widget.icondata,
+            color: kwhiteColor,
           ),
           Text(
             widget.icontext,

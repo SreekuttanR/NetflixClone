@@ -1,0 +1,6 @@
+{
+    "errorLens.enabledInMergeConflict": true,
+    "git.enabled": false,
+    "search.useGlobalIgnoreFiles": true,
+    "git.enableSmartCommit": false
+}

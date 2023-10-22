@@ -22,7 +22,7 @@ class SearchRepository implements SearchService {
         final searchList = (response.data['results'] as List).map((e) {
           return Search.fromJson(e);
         }).toList();
-       // print(searchList);
+        // print(searchList);
 
         return Right(searchList);
       } else {

@@ -27,14 +27,12 @@ class ComingSoonRepository implements NewAndHotService {
         return const Left(MainFailure.serverFailure());
       }
     } catch (_) {
-
       return const Left(MainFailure.clientFailure());
     }
   }
 
   @override
-  Future<Either<MainFailure, List<NewAndHot>>>
-      getEvorionesWatching() async {
+  Future<Either<MainFailure, List<NewAndHot>>> getEvorionesWatching() async {
     try {
       final Response response =
           await Dio(BaseOptions()).get(ApiEndPoints.evoryOnesWatching);
@@ -44,7 +42,7 @@ class ComingSoonRepository implements NewAndHotService {
             (response.data['results'] as List).map((e) {
           return NewAndHot.fromJson(e);
         }).toList();
-       // print(response.data.toString());
+        // print(response.data.toString());
         return Right(evorionesWatchingList);
       } else {
         return const Left(MainFailure.serverFailure());

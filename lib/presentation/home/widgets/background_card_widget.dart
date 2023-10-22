@@ -7,7 +7,7 @@ import '../../new_and_hot/widgets/costom_button_widget.dart';
 
 class BackgroundCard extends StatelessWidget {
   final String? imageurl;
-  const BackgroundCard({Key? key,required this.imageurl}) : super(key: key);
+  const BackgroundCard({Key? key, required this.imageurl}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class BackgroundCard extends StatelessWidget {
             return Container(
               width: double.infinity,
               height: screenSize.height * 0.79,
-              decoration:  BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(imageurl ?? ''),
                 ),

@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => getIt<NewAndHotBloc>(),
         ),
-         BlocProvider(
+        BlocProvider(
           create: (context) => getIt<HomePageBloc>(),
         ),
       ],

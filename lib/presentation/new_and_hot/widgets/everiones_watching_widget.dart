@@ -7,13 +7,15 @@ import 'details_text_widget.dart';
 import 'video_widget.dart';
 
 class EveryonesWatchingWidget extends StatelessWidget {
-
   final String? posterpath;
-    final String? title;
+  final String? title;
   final String? overview;
 
   const EveryonesWatchingWidget({
-    Key? key, required this.posterpath, required this.title, required this.overview,
+    Key? key,
+    required this.posterpath,
+    required this.title,
+    required this.overview,
   }) : super(key: key);
 
   @override
@@ -21,12 +23,14 @@ class EveryonesWatchingWidget extends StatelessWidget {
     return Column(
       children: [
         kheight,
-         DeatailsTaxt(
+        DeatailsTaxt(
           titleText: '',
-          discription:overview??'',
+          discription: overview ?? '',
         ),
         kheight50,
-        VideoWidget(imageUrl: posterpath??'',),
+        VideoWidget(
+          imageUrl: posterpath ?? '',
+        ),
         const Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [

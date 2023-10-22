@@ -8,7 +8,7 @@ class DeatailsTaxt extends StatelessWidget {
   final String discription;
 
   const DeatailsTaxt(
-      {Key? key,  required this.titleText, required this.discription})
+      {Key? key, required this.titleText, required this.discription})
       : super(key: key);
 
   @override

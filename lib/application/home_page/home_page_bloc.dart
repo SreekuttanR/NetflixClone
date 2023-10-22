@@ -42,9 +42,9 @@ class HomePageBloc extends Bloc<HomePageEvent, HomePageState> {
         return state.copyWith(
             isLoading: false,
             trendingNowList: success,
-           // releasedPastYear: releasedPastYears,
-           // tenseDramas: tenseDramass,
-           // southIndianCinema: success,
+            // releasedPastYear: releasedPastYears,
+            // tenseDramas: tenseDramass,
+            // southIndianCinema: success,
             trendingNowListFailureOrSuccesOption: some(
               Right(success),
             ));

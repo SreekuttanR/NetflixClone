@@ -11,16 +11,14 @@ class VideoWidget extends StatelessWidget {
     return Stack(
       children: [
         //Image
-           Container(
-              width: double.infinity,
+        Container(
+          width: double.infinity,
           height: screensize.height * 0.26,
           decoration: BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: NetworkImage(imageUrl))
-          ),
-           ),
-    
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: NetworkImage(imageUrl))),
+        ),
+
         //Mute Icon IN Image
 
         Positioned(

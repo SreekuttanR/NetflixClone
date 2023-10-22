@@ -39,9 +39,9 @@ class MainTitleCard2 extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) => Maincard(
                       imageUrl: state.downloads?.isNotEmpty == true &&
-                                  state.downloads!.isNotEmpty
-                              ? '$imageAppentUrl${state.downloads?[index].posterPath ?? ''}'
-                              : null,
+                              state.downloads!.isNotEmpty
+                          ? '$imageAppentUrl${state.downloads?[index].posterPath ?? ''}'
+                          : null,
                     ),
                     separatorBuilder: (context, index) => kwidth,
                     itemCount: 10,

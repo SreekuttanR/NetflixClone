@@ -8,7 +8,7 @@ import '../../application/search/search_bloc.dart';
 import '../../core/constants.dart';
 
 class ScreenSearch extends StatelessWidget {
-   ScreenSearch({Key? key}) : super(key: key);
+  ScreenSearch({Key? key}) : super(key: key);
   final _debouncer = Debouncer(milliseconds: 1000);
   @override
   Widget build(BuildContext context) {
@@ -35,23 +35,17 @@ class ScreenSearch extends StatelessWidget {
               ),
               style: const TextStyle(color: Colors.white),
               onChanged: (value) {
-                _debouncer.run(() => 
-                BlocProvider.of<SearchBloc>(context)
-                    .add(SearchEvent.getSearchImage(movieQuery: value))
-                );
+                _debouncer.run(() => BlocProvider.of<SearchBloc>(context)
+                    .add(SearchEvent.getSearchImage(movieQuery: value)));
               },
             ),
             kheight,
             Expanded(child: BlocBuilder<SearchBloc, SearchState>(
               builder: (context, state) {
                 if (state.search!.isEmpty) {
-                  return 
-                  
-                     const SearchIdleWidget();
+                  return const SearchIdleWidget();
                 } else {
-                           return 
-                           
-                    const SearchResultWidget();
+                  return const SearchResultWidget();
                 }
               },
             )),

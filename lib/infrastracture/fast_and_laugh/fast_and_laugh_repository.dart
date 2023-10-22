@@ -8,9 +8,9 @@ import 'package:netflix/domain/fast_ant_laugh/models/fast_and_laugh.dart';
 import '../core/api_end_points.dart';
 
 @LazySingleton(as: FastAndLaughService)
-class DownloadsRepodsitory implements FastAndLaughService { 
-   @override
-  Future<Either<MainFailure, List<FastAndLaugh>>> getFastAndLaughvideo() async{
+class DownloadsRepodsitory implements FastAndLaughService {
+  @override
+  Future<Either<MainFailure, List<FastAndLaugh>>> getFastAndLaughvideo() async {
     try {
       final Response response =
           await Dio(BaseOptions()).get(ApiEndPoints.fastAndLaugh);
@@ -19,7 +19,7 @@ class DownloadsRepodsitory implements FastAndLaughService {
         final fastAndlaughList = (response.data['videos'] as List).map((e) {
           return FastAndLaugh.fromJson(e);
         }).toList();
-      //  print(response.data);
+        //  print(response.data);
         return Right(fastAndlaughList);
       } else {
         return const Left(MainFailure.serverFailure());

@@ -27,7 +27,7 @@ const khomeTextStyle = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.bold,
 );
-
+//image appentUrl
 const imageAppentUrl = 'https://image.tmdb.org/t/p/w500';
 
 

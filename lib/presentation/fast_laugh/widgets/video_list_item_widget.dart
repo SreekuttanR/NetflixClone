@@ -84,7 +84,7 @@ class _VideoListItemState extends State<VideoListItem> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                   Padding(
+                  Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: CircleAvatar(
                       backgroundColor: Colors.grey,

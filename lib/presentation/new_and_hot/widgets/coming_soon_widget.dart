@@ -126,7 +126,7 @@ class ComingSoonWidget extends StatelessWidget {
                   //Title And discription
 
                   DeatailsTaxt(
-                    titleText: title??'',
+                    titleText: title ?? '',
                     discription: overview ?? '',
                   ),
                 ],

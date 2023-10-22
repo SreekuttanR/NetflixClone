@@ -9,7 +9,7 @@ class Section3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     final size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
     return Column(
       children: [
         SizedBox(
@@ -20,13 +20,13 @@ class Section3 extends StatelessWidget {
             ),
             color: kButtenColorBlue,
             onPressed: () {},
-            child:  Padding(
+            child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: Text(
                 'set up',
                 style: TextStyle(
                     color: kwhiteColor,
-                    fontSize: size.width*0.045,
+                    fontSize: size.width * 0.045,
                     fontWeight: FontWeight.bold),
               ),
             ),
@@ -39,13 +39,13 @@ class Section3 extends StatelessWidget {
           ),
           color: kButtenColorWhite,
           onPressed: () {},
-          child:  Padding(
+          child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 10),
             child: Text(
               'See what you can download',
               style: TextStyle(
                   color: kblackColor,
-                  fontSize: size.width*0.04,
+                  fontSize: size.width * 0.04,
                   fontWeight: FontWeight.bold),
             ),
           ),
